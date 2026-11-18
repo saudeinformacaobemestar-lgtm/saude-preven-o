@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saúde em Movimento | Guia Jovem</title>
+  <meta name="description" content="Saúde em Movimento: um guia prático para jovens sobre prevenção de doenças e promoção da saúde.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/intro.css">
+  <link rel="stylesheet" href="styles/cards.css">
+  <link rel="stylesheet" href="styles/sections.css">
+  <link rel="stylesheet" href="styles/references.css">
+</head>
+<body>
+
+  <!-- ===================== TOPO (aparece fora da tela inicial) ===================== -->
+  <header class="topbar" id="topbar" hidden>
+    <a href="#inicio" class="brand">
+      <span class="brand__power"><i class="ph-bold ph-person-simple-run"></i></span>
+      <span>Saúde em <strong>Movimento</strong></span>
+    </a>
+    <a href="#guia" class="btn btn--small btn--ghost"><i class="ph-bold ph-squares-four"></i> Temas</a>
+  </header>
+
+  <main id="app">
+
+    <!-- ===================== 1. TELA INICIAL ===================== -->
+    <section class="view intro" data-view="inicio">
+      <div class="intro__stickers" aria-hidden="true">
+        <span class="sticker sticker--1"><i class="ph-fill ph-heart"></i></span>
+        <span class="sticker sticker--2"><i class="ph-fill ph-lightning"></i></span>
+        <span class="sticker sticker--3"><i class="ph-fill ph-drop"></i></span>
+        <span class="sticker sticker--4"><i class="ph-fill ph-sneaker-move"></i></span>
+        <span class="sticker sticker--5"><i class="ph-fill ph-orange-slice"></i></span>
+        <span class="sticker sticker--6"><i class="ph-fill ph-shield-check"></i></span>
+      </div>
+
+      <div class="intro__content">
+        <p class="tag tag--dark">Guia Jovem · Prevenção e promoção da saúde</p>
+        <h1 class="intro__title">
+          Saúde em
+          <span class="intro__on"><span class="intro__switch">Movimento</span></span>
+        </h1>
+        <p class="intro__slogan">Prevenir hoje. Viver melhor sempre.</p>
+        <p class="intro__lead">Um guia prático para jovens sobre prevenção de doenças e promoção da saúde.</p>
+        <a href="#guia" class="btn btn--big">Bora começar <i class="ph-bold ph-arrow-right"></i></a>
+      </div>
+
+      <footer class="intro__footer">
+        <p><i class="ph ph-info"></i> Conteúdo apenas educativo: não substitui avaliação, diagnóstico ou tratamento por profissionais de saúde.</p>
+        <a href="#referencias" class="discreet-link">Referências</a>
+      </footer>
+    </section>
+
+    <!-- ===================== 2. CARDS ===================== -->
+    <section class="view guide" data-view="guia" hidden>
+      <div class="container">
+        <header class="guide__head">
+          <p class="tag">3 temas · escolha por onde começar</p>
+          <h2 class="guide__title">Coloque sua saúde em <span class="hl hl--lime">movimento</span> 👇</h2>
+        </header>
+
+        <div class="cards">
+          <a href="#secao-1" class="card card--blue reveal">
+            <div class="card__cover"><img src="assets/capa-higiene.jpg" alt="Jovens lavando as mãos e higienizando alimentos"></div>
+            <div class="card__body">
+              <span class="card__num">01</span>
+              <h3 class="card__title">Prevenção de doenças parasitárias e de microrganismos</h3>
+              <p class="card__text">Mãos lavadas, água segura e comida bem higienizada: os hábitos simples que mantêm vermes, protozoários e outros invasores longe.</p>
+              <span class="card__cta">Abrir tema <i class="ph-bold ph-arrow-right"></i></span>
+            </div>
+          </a>
+
+          <a href="#secao-2" class="card card--lime reveal">
+            <div class="card__cover"><img src="assets/capa-movimento.jpg" alt="Jovens praticando atividades ao ar livre"></div>
+            <div class="card__body">
+              <span class="card__num">02</span>
+              <h3 class="card__title">Atividade física, combate ao sedentarismo e vida saudável</h3>
+              <p class="card__text">Não precisa ser atleta: dançar, pedalar ou caminhar já conta. Descubra quanto se mexer e como equilibrar telas, sono e alimentação.</p>
+              <span class="card__cta">Abrir tema <i class="ph-bold ph-arrow-right"></i></span>
+            </div>
+          </a>
+
+          <a href="#secao-3" class="card card--pink reveal">
+            <div class="card__cover"><img src="assets/capa-alimentacao.jpg" alt="Amigos compartilhando uma refeição variada"></div>
+            <div class="card__body">
+              <span class="card__num">03</span>
+              <h3 class="card__title">Alimentação saudável e prevenção de doenças crônicas: hipertensão e diabetes juvenil</h3>
+              <p class="card__text">O que é pressão alta, a diferença entre diabetes tipo 1 e tipo 2 e como hábitos do dia a dia ajudam a reduzir riscos, sem culpa.</p>
+              <span class="card__cta">Abrir tema <i class="ph-bold ph-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3a. SEÇÃO 1 ===================== -->
+    <article class="view topic topic--blue" data-view="secao-1" hidden>
+      <header class="topic__hero">
+        <div class="container topic__hero-grid">
+          <div>
+            <a href="#guia" class="back"><i class="ph-bold ph-arrow-left"></i> Voltar aos temas</a>
+            <span class="topic__num">01</span>
+            <h1 class="topic__title">Prevenção de doenças parasitárias e de microrganismos</h1>
+          </div>
+          <img class="topic__img" src="assets/capa-higiene.jpg" alt="Jovens lavando as mãos e higienizando alimentos">
+        </div>
+      </header>
+
+      <div class="container topic__body">
+        <p class="lead reveal">Microrganismos estão presentes no ambiente e muitos são <strong>inofensivos ou até úteis</strong>. Alguns, porém, podem causar infecções. <strong>Parasitas</strong> são seres que vivem em outro organismo ou dele retiram recursos, podendo provocar doenças. A prevenção combina higiene, água segura, alimentos bem higienizados, saneamento, vacinação quando indicada e informação de qualidade.</p>
+
+        <section class="block reveal">
+          <h2 class="block__title"><i class="ph-fill ph-bug-beetle"></i> O que são doenças parasitárias?</h2>
+          <p>São doenças causadas por parasitas, como <strong>protozoários</strong> e <strong>vermes (helmintos)</strong>. A transmissão varia conforme o agente:</p>
+
+          <div class="mini-grid">
+            <div class="mini"><i class="ph-duotone ph-drop"></i><span>Água ou alimentos contaminados</span></div>
+            <div class="mini"><i class="ph-duotone ph-hand"></i><span>Mãos sujas</span></div>
+            <div class="mini"><i class="ph-duotone ph-plant"></i><span>Solo e ambiente contaminados</span></div>
+            <div class="mini"><i class="ph-duotone ph-bug"></i><span>Vetores, como mosquitos</span></div>
+          </div>
+
+          <h3 class="label">Exemplos</h3>
+          <ul class="chips">
+            <li>Giardíase</li><li>Amebíase</li><li>Ascaridíase</li><li>Ancilostomíase</li>
+          </ul>
+
+          <h3 class="label">Possíveis sintomas</h3>
+          <p class="muted">Dependem da doença e podem incluir:</p>
+          <ul class="chips chips--outline">
+            <li>Dor abdominal</li><li>Diarreia</li><li>Náuseas</li><li>Vômitos</li><li>Anemia</li><li>Coceira</li><li>Ausência de sintomas</li>
+          </ul>
+        </section>
+
+        <section class="block reveal">
+          <div class="block__head">
+            <h2 class="block__title"><i class="ph-fill ph-shield-check"></i> Medidas de prevenção</h2>
+            <div class="progress" data-progress="secao1">
+              <span class="progress__label"><strong data-progress-count>0</strong>/6 hábitos ativados</span>
+              <span class="progress__bar"><span data-progress-fill></span></span>
+            </div>
+          </div>
+          <p class="muted">Toque em cada hábito que você já pratica para ativá-lo. ✅</p>
+
+          <div class="habits" data-checklist="secao1">
+            <button class="habit" type="button" aria-pressed="false">
+              <i class="ph-duotone ph-hand-soap habit__icon"></i>
+              <strong>Higienize as mãos</strong>
+              <span>Lave com água e sabão antes de comer ou preparar alimentos e depois de usar o banheiro, tocar em animais ou chegar da rua.</span>
+              <i class="ph-fill ph-check-circle habit__check"></i>
+            </button>
+            <button class="habit" type="button" aria-pressed="false">
+              <i class="ph-duotone ph-drop habit__icon"></i>
+              <strong>Cuide da água</strong>
+              <span>Consuma água potável; quando não houver garantia de tratamento, siga as orientações oficiais de filtração, fervura ou desinfecção.</span>
+              <i class="ph-fill ph-check-circle habit__check"></i>
+            </button>
+            <button class="habit" type="button" aria-pressed="false">
+              <i class="ph-duotone ph-carrot habit__icon"></i>
+              <strong>Higienize os alimentos</strong>
+              <span>Lave bem frutas, verduras e legumes em água potável e use solução sanitizante própria para alimentos conforme o rótulo.</span>
+              <i class="ph-fill ph-check-circle habit__check"></i>
+            </button>
+            <button class="habit" type="button" aria-pressed="false">
+              <i class="ph-duotone ph-cooking-pot habit__icon"></i>
+              <strong>Cozinhe bem</strong>
+              <span>Evite carnes, pescados e ovos crus ou malcozidos e mantenha os alimentos refrigerados e protegidos.</span>
+              <i class="ph-fill ph-check-circle habit__check"></i>
+            </button>
+            <button class="habit" type="button" aria-pressed="false">
+              <i class="ph-duotone ph-sneaker habit__icon"></i>
+              <strong>Proteja-se do ambiente</strong>
+              <span>Use calçados em locais com possível contaminação do solo, descarte o lixo corretamente e combata focos de vetores.</span>
+              <i class="ph-fill ph-check-circle habit__check"></i>
+            </button>
+            <button class="habit" type="button" aria-pressed="false">
+              <i class="ph-duotone ph-syringe habit__icon"></i>
+              <strong>Mantenha a vacinação em dia</strong>
+              <span>Vacinas previnem diversas infecções; confira o calendário com a unidade de saúde.</span>
+              <i class="ph-fill ph-check-circle habit__check"></i>
+            </button>
+          </div>
+        </section>
+
+        <section class="block block--warn reveal">
+          <h2 class="block__title"><i class="ph-fill ph-warning"></i> Fatores de risco</h2>
+          <p>Estes fatores aumentam a exposição:</p>
+          <ul class="risk-list">
+            <li><i class="ph-bold ph-drop-slash"></i> Água sem tratamento</li>
+            <li><i class="ph-bold ph-pipe"></i> Falta de coleta de esgoto</li>
+            <li><i class="ph-bold ph-hand"></i> Lavagem inadequada das mãos e dos alimentos</li>
+            <li><i class="ph-bold ph-fish"></i> Alimentos crus ou malcozidos</li>
+            <li><i class="ph-bold ph-snowflake"></i> Armazenamento incorreto</li>
+            <li><i class="ph-bold ph-trash"></i> Ambientes sujos e com acúmulo de materiais</li>
+            <li><i class="ph-bold ph-plant"></i> Contato com solo ou água contaminados</li>
+            <li><i class="ph-bold ph-bug"></i> Presença de vetores</li>
+            <li><i class="ph-bold ph-airplane-tilt"></i> Viagens para locais com saneamento precário</li>
+            <li><i class="ph-bold ph-buildings"></i> Moradias superlotadas</li>
+          </ul>
+          <p class="callout callout--soft"><i class="ph-fill ph-users-three"></i> A prevenção depende tanto de <strong>atitudes individuais</strong> quanto de <strong>políticas públicas</strong> de saneamento e acesso à água segura (potável).</p>
+        </section>
+
+        <nav class="pager">
+          <a href="#guia" class="btn btn--ghost"><i class="ph-bold ph-squares-four"></i> Todos os temas</a>
+          <a href="#secao-2" class="btn">Próximo: Atividade física <i class="ph-bold ph-arrow-right"></i></a>
+        </nav>
+      </div>
+    </article>
+
+    <!-- ===================== 3b. SEÇÃO 2 ===================== -->
+    <article class="view topic topic--lime" data-view="secao-2" hidden>
+      <header class="topic__hero">
+        <div class="container topic__hero-grid">
+          <div>
+            <a href="#guia" class="back"><i class="ph-bold ph-arrow-left"></i> Voltar aos temas</a>
+            <span class="topic__num">02</span>
+            <h1 class="topic__title">Atividade física, combate ao sedentarismo e vida saudável</h1>
+          </div>
+          <img class="topic__img" src="assets/capa-movimento.jpg" alt="Jovens praticando atividades ao ar livre">
+        </div>
+      </header>
+
+      <div class="container topic__body">
+        <p class="lead reveal">Movimentar o corpo é uma forma de cuidar da saúde <strong>física, mental e social</strong>. Não é necessário ser atleta: caminhar, dançar, pedalar, nadar, brincar ou praticar esportes são opções. O melhor exercício é aquele que <strong>combina com você</strong>, é feito com segurança e pode ser incorporado à rotina.</p>
+
+        <ul class="chips chips--big reveal">
+          <li><i class="ph-bold ph-person-simple-walk"></i> Caminhar</li>
+          <li><i class="ph-bold ph-music-notes"></i> Dançar</li>
+          <li><i class="ph-bold ph-bicycle"></i> Pedalar</li>
+          <li><i class="ph-bold ph-swimming-pool"></i> Nadar</li>
+          <li><i class="ph-bold ph-soccer-ball"></i> Esportes</li>
+          <li><i class="ph-bold ph-smiley"></i> Brincar</li>
+        </ul>
+
+        <section class="block reveal">
+          <h2 class="block__title"><i class="ph-fill ph-heartbeat"></i> Importância da atividade física</h2>
+          <p>A atividade física regular traz benefícios para o corpo todo:</p>
+          <div class="mini-grid mini-grid--3">
+            <div class="mini"><i class="ph-duotone ph-barbell"></i><span>Fortalece músculos e ossos</span></div>
+            <div class="mini"><i class="ph-duotone ph-wind"></i><span>Melhora o condicionamento cardiorrespiratório</span></div>
+            <div class="mini"><i class="ph-duotone ph-moon-stars"></i><span>Melhora o sono</span></div>
+            <div class="mini"><i class="ph-duotone ph-smiley"></i><span>Melhora o humor</span></div>
+            <div class="mini"><i class="ph-duotone ph-lightning"></i><span>Aumenta a disposição</span></div>
+            <div class="mini"><i class="ph-duotone ph-heart"></i><span>Reduz o risco de hipertensão, diabetes tipo 2 e outras doenças crônicas</span></div>
+          </div>
+
+          <div class="stats">
+            <div class="stat stat--lime">
+              <span class="stat__value" data-count="60">0</span>
+              <span class="stat__unit">min/dia</span>
+              <p>em média, de atividade física moderada a vigorosa ao longo da semana</p>
+            </div>
+            <div class="stat stat--purple">
+              <span class="stat__value" data-count="3">0</span>
+              <span class="stat__unit">dias/semana</span>
+              <p>com atividades vigorosas e de fortalecimento muscular e ósseo</p>
+            </div>
+          </div>
+          <p class="muted small">Recomendação internacional para crianças e adolescentes.</p>
+        </section>
+
+        <section class="block reveal">
+          <h2 class="block__title"><i class="ph-fill ph-armchair"></i> Prevenção ao sedentarismo</h2>
+          <p><strong>Comportamento sedentário</strong> é passar muito tempo sentado ou reclinado com baixo gasto de energia, como durante o uso de telas e games.</p>
+
+          <h3 class="label">Hacks para sair do sofá</h3>
+          <div class="hacks">
+            <div class="hack"><i class="ph-bold ph-arrow-fat-up"></i>Levante</div>
+            <div class="hack"><i class="ph-bold ph-person-arms-spread"></i>Alongue-se</div>
+            <div class="hack"><i class="ph-bold ph-footprints"></i>Caminhe um pouco</div>
+            <div class="hack"><i class="ph-bold ph-pause-circle"></i>Pausas entre estudo, jogos e redes</div>
+            <div class="hack"><i class="ph-bold ph-steps"></i>Prefira escadas</div>
+            <div class="hack"><i class="ph-bold ph-bicycle"></i>Deslocamento ativo</div>
+          </div>
+
+          <div class="pause-timer" data-pause-timer>
+            <div>
+              <strong>Desafio da pausa ativa</strong>
+              <p>Ficou muito tempo sentado? Levanta e se mexe por 2 minutos!</p>
+            </div>
+            <button class="btn btn--small" type="button" data-timer-btn><i class="ph-bold ph-play"></i> <span data-timer-text>Começar 2:00</span></button>
+          </div>
+
+          <p class="callout callout--soft"><i class="ph-fill ph-device-mobile"></i> Reduzir o tempo sedentário <strong>não significa abandonar a tecnologia</strong>, mas equilibrá-la com movimento, sono e convivência.</p>
+        </section>
+
+        <section class="block reveal">
+          <h2 class="block__title"><i class="ph-fill ph-bowl-food"></i> Alimentação saudável</h2>
+          <img class="block__img" src="assets/alimentacao-saudavel.jpg" alt="Jovem pulando cercada de frutas coloridas">
+          <div class="compare">
+            <div class="compare__col compare__col--yes">
+              <h3><i class="ph-bold ph-thumbs-up"></i> Priorize</h3>
+              <p>Alimentos <em>in natura</em> ou minimamente processados:</p>
+              <ul>
+                <li>Frutas, verduras e legumes</li>
+                <li>Feijão e arroz</li>
+                <li>Raízes</li>
+                <li>Ovos e outras fontes de proteína</li>
+                <li>Água 💧</li>
+                <li>Refeições feitas em casa e compartilhadas</li>
+              </ul>
+            </div>
+            <div class="compare__col compare__col--no">
+              <h3><i class="ph-bold ph-hand-palm"></i> Reduza o consumo frequente</h3>
+              <ul>
+                <li>Bebidas açucaradas</li>
+                <li>Embutidos</li>
+                <li>Salgadinhos</li>
+                <li>Biscoitos recheados</li>
+                <li>Outros ultraprocessados</li>
+              </ul>
+            </div>
+          </div>
+          <p class="callout callout--soft"><i class="ph-fill ph-hand-heart"></i> Evite dietas restritivas e comparações corporais: necessidades nutricionais variam conforme crescimento, rotina, cultura e condições de saúde.</p>
+        </section>
+
+        <nav class="pager">
+          <a href="#secao-1" class="btn btn--ghost"><i class="ph-bold ph-arrow-left"></i> Anterior</a>
+          <a href="#secao-3" class="btn">Próximo: Alimentação e DCNT <i class="ph-bold ph-arrow-right"></i></a>
+        </nav>
+      </div>
+    </article>
+
+    <!-- ===================== 3c. SEÇÃO 3 ===================== -->
+    <article class="view topic topic--pink" data-view="secao-3" hidden>
+      <header class="topic__hero">
+        <div class="container topic__hero-grid">
+          <div>
+            <a href="#guia" class="back"><i class="ph-bold ph-arrow-left"></i> Voltar aos temas</a>
+            <span class="topic__num">03</span>
+            <h1 class="topic__title">Alimentação saudável e prevenção de doenças crônicas: hipertensão e diabetes juvenil</h1>
+          </div>
+          <img class="topic__img" src="assets/capa-alimentacao.jpg" alt="Amigos compartilhando uma refeição variada">
+        </div>
+      </header>
+
+      <div class="container topic__body">
+        <p class="lead reveal"><strong>Doenças crônicas não transmissíveis (DCNT)</strong>, como doenças cardiovasculares e diabetes, têm múltiplas causas. Hábitos saudáveis ajudam a reduzir riscos, mas não garantem que uma doença nunca ocorrerá.</p>
+
+        <div class="compare reveal">
+          <div class="compare__col compare__col--neutral">
+            <h3><i class="ph-bold ph-dna"></i> Não podem ser modificados</h3>
+            <ul><li>Genética</li><li>Idade</li></ul>
+          </div>
+          <div class="compare__col compare__col--yes">
+            <h3><i class="ph-bold ph-sliders-horizontal"></i> Podem ser cuidados</h3>
+            <ul><li>Alimentação</li><li>Atividade física</li><li>Sono</li><li>Uso de tabaco</li><li>Consumo de álcool</li></ul>
+          </div>
+        </div>
+        <p class="callout callout--soft reveal"><i class="ph-fill ph-hand-heart"></i> Na adolescência, o foco deve ser <strong>saúde e bem-estar, sem culpa ou estigma</strong>.</p>
+
+        <section class="block reveal">
+          <h2 class="block__title"><i class="ph-fill ph-heartbeat"></i> O que é hipertensão?</h2>
+          <p><strong>Hipertensão arterial</strong> é a elevação persistente da pressão que o sangue exerce nas paredes das artérias.</p>
+          <h3 class="label">Em jovens, pode estar relacionada a</h3>
+          <ul class="chips chips--outline">
+            <li>Fatores familiares</li><li>Doenças renais ou hormonais</li><li>Excesso de sal</li><li>Sedentarismo</li><li>Excesso de peso</li>
+          </ul>
+          <p class="callout callout--info"><i class="ph-fill ph-eye-slash"></i> Muitas vezes <strong>não causa sintomas</strong>. Por isso, medir a pressão nas consultas de saúde é importante. Em crianças e adolescentes, a interpretação dos valores considera idade, sexo e estatura, conforme critérios clínicos.</p>
+
+          <h3 class="label">Prevenção e cuidado</h3>
+          <div class="hacks">
+            <div class="hack"><i class="ph-bold ph-bowl-food"></i>Alimentação variada</div>
+            <div class="hack"><i class="ph-bold ph-minus-circle"></i>Menos sal e ultraprocessados</div>
+            <div class="hack"><i class="ph-bold ph-person-simple-run"></i>Atividade física</div>
+            <div class="hack"><i class="ph-bold ph-bed"></i>Dormir bem</div>
+            <div class="hack"><i class="ph-bold ph-prohibit"></i>Evitar tabaco e álcool</div>
+            <div class="hack"><i class="ph-bold ph-stethoscope"></i>Ir às consultas</div>
+          </div>
+          <p>O tratamento depende da causa e da avaliação profissional; pode envolver mudanças no estilo de vida, investigação de outras condições e, quando indicado, medicamentos.</p>
+          <p class="callout callout--alert"><i class="ph-fill ph-pill"></i> Não use remédios por conta própria nem interrompa uma prescrição.</p>
+        </section>
+
+        <section class="block reveal">
+          <h2 class="block__title"><i class="ph-fill ph-drop-half-bottom"></i> O que é diabetes juvenil?</h2>
+          <p>A expressão <em>"diabetes juvenil"</em> costuma ser usada para falar do diabetes diagnosticado na infância ou adolescência, mas pessoas jovens podem ter <strong>diferentes tipos</strong>. Diabetes é uma condição em que a <strong>glicose no sangue permanece elevada</strong> porque o organismo não produz insulina suficiente ou não a utiliza adequadamente.</p>
+
+          <h3 class="label">Sinais que merecem avaliação</h3>
+          <div class="mini-grid mini-grid--5">
+            <div class="mini"><i class="ph-duotone ph-drop"></i><span>Sede intensa</span></div>
+            <div class="mini"><i class="ph-duotone ph-toilet"></i><span>Urinar muitas vezes</span></div>
+            <div class="mini"><i class="ph-duotone ph-fork-knife"></i><span>Fome aumentada</span></div>
+            <div class="mini"><i class="ph-duotone ph-battery-low"></i><span>Cansaço</span></div>
+            <div class="mini"><i class="ph-duotone ph-scales"></i><span>Perda de peso sem explicação</span></div>
+          </div>
+          <p class="muted">No diabetes tipo 1, os sintomas podem surgir rapidamente.</p>
+
+          <h3 class="label">Prevenção e tratamento</h3>
+          <p>O <strong>diabetes tipo 1</strong> é uma condição autoimune e <strong>não é causado por comer açúcar</strong> ou por falta de exercício; atualmente não há uma medida comprovada de estilo de vida que o previna. O <strong>tipo 2</strong> pode ter seu risco reduzido com alimentação adequada, movimento, sono e acompanhamento de fatores de risco, mas não é totalmente evitável.</p>
+          <p>O tratamento é individualizado e pode incluir insulina, outros medicamentos, monitoramento da glicose, orientação nutricional e apoio da equipe de saúde.</p>
+          <p class="callout callout--alert"><i class="ph-fill ph-test-tube"></i> Suspeita de diabetes exige avaliação e exames, nunca autodiagnóstico.</p>
+        </section>
+
+        <section class="block reveal">
+          <h2 class="block__title"><i class="ph-fill ph-arrows-left-right"></i> Diferença entre tipo 1 e tipo 2</h2>
+          <div class="tabs" data-tabs>
+            <div class="tabs__list" role="tablist">
+              <button class="tabs__btn" role="tab" aria-selected="true" aria-controls="tab-t1" id="btn-t1">Tipo 1</button>
+              <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab-t2" id="btn-t2" tabindex="-1">Tipo 2</button>
+            </div>
+            <div class="tabs__panel" role="tabpanel" id="tab-t1" aria-labelledby="btn-t1">
+              <ul class="tick-list">
+                <li>O sistema imunológico <strong>destrói as células do pâncreas</strong> que produzem insulina.</li>
+                <li>A pessoa passa a <strong>precisar de insulina diariamente</strong>.</li>
+                <li>Pode aparecer na infância, adolescência ou vida adulta.</li>
+                <li><strong>Não</strong> é causado por hábitos alimentares.</li>
+              </ul>
+            </div>
+            <div class="tabs__panel" role="tabpanel" id="tab-t2" aria-labelledby="btn-t2" hidden>
+              <ul class="tick-list">
+                <li>O organismo desenvolve <strong>resistência à ação da insulina</strong> e, com o tempo, pode não produzir o suficiente.</li>
+                <li>Associado a fatores genéticos e a fatores modificáveis, como sedentarismo e padrões alimentares.</li>
+                <li>Também pode ocorrer em adolescentes.</li>
+                <li>O cuidado pode envolver mudanças de hábitos e medicamentos, conforme avaliação clínica.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="muted small"><i class="ph ph-info"></i> Apenas exames e avaliação profissional diferenciam os tipos.</p>
+        </section>
+
+        <section class="block reveal">
+          <h2 class="block__title"><i class="ph-fill ph-sparkle"></i> Promoção da saúde</h2>
+          <p>Promover saúde é criar condições para que todas as pessoas possam viver melhor — na escola, em casa, na comunidade e nos serviços de saúde. Não se resume a evitar doenças: envolve bem-estar físico e emocional, vínculos, segurança, informação, acesso a direitos e ambientes saudáveis.</p>
+
+          <div class="tips">
+            <div class="tip tip--blue"><i class="ph-duotone ph-person"></i><strong>Conheça seu corpo</strong><span>Observe mudanças persistentes e procure orientação quando algo preocupa; não se automedique.</span></div>
+            <div class="tip tip--lime"><i class="ph-duotone ph-first-aid-kit"></i><strong>Use os serviços de saúde</strong><span>Mantenha consultas de rotina, vacinação e acompanhamento na Unidade Básica de Saúde (UBS).</span></div>
+            <div class="tip tip--purple"><i class="ph-duotone ph-brain"></i><strong>Cuide da saúde mental</strong><span>Converse com alguém de confiança, respeite seus limites e busque apoio profissional quando necessário.</span></div>
+            <div class="tip tip--orange"><i class="ph-duotone ph-footprints"></i><strong>Faça escolhas possíveis</strong><span>Pequenas mudanças consistentes — beber água, incluir uma fruta, caminhar ou dormir em horário regular — contam.</span></div>
+            <div class="tip tip--pink"><i class="ph-duotone ph-share-network"></i><strong>Compartilhe informação confiável</strong><span>Verifique a fonte antes de repassar conteúdos de saúde nas redes sociais.</span></div>
+            <div class="tip tip--yellow"><i class="ph-duotone ph-users-three"></i><strong>Participe da comunidade</strong><span>Incentive espaços públicos seguros, água tratada, saneamento, alimentação adequada e oportunidades de esporte e lazer.</span></div>
+          </div>
+        </section>
+
+        <aside class="alert-box reveal">
+          <i class="ph-fill ph-siren"></i>
+          <div>
+            <strong>Fique atento!</strong>
+            <p>Sede e urina excessivas, perda de peso inexplicada, visão embaçada, feridas que não cicatrizam ou mal-estar persistente devem ser avaliados por um serviço de saúde. <strong>Em situações intensas ou de piora rápida, procure atendimento imediatamente.</strong></p>
+          </div>
+        </aside>
+
+        <section class="finale reveal">
+          <h2>Uma rotina saudável começa com atitudes possíveis</h2>
+          <p>Escolha uma atividade física de que goste, faça pausas nas telas, inclua alimentos variados nas refeições, cuide da higiene e mantenha a vacinação em dia. Convide amigos e familiares: cuidar da saúde também pode ser uma experiência <strong>coletiva, positiva e sem julgamentos</strong>.</p>
+        </section>
+
+        <nav class="pager">
+          <a href="#secao-2" class="btn btn--ghost"><i class="ph-bold ph-arrow-left"></i> Anterior</a>
+          <a href="#guia" class="btn">Todos os temas <i class="ph-bold ph-squares-four"></i></a>
+        </nav>
+      </div>
+    </article>
+
+    <!-- ===================== 4. REFERÊNCIAS ===================== -->
+    <section class="view refs" data-view="referencias" hidden>
+      <div class="container container--narrow">
+        <a href="#guia" class="back"><i class="ph-bold ph-arrow-left"></i> Voltar</a>
+        <h1 class="refs__title">Referências bibliográficas</h1>
+        <p class="muted">Fontes institucionais consultadas para elaboração do conteúdo. Acesso em: 13 nov. 2026.</p>
+        <ol class="refs__list">
+          <li><strong>BRASIL. Ministério da Saúde.</strong> Geo-helmintíase. <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/g/geo-helmintiase" target="_blank" rel="noopener">gov.br/saude/…/geo-helmintiase</a></li>
+          <li><strong>BRASIL. Ministério da Saúde.</strong> Doenças diarreicas agudas (DDA): causas, fatores de risco e prevenção. <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dda/" target="_blank" rel="noopener">gov.br/saude/…/dda</a></li>
+          <li><strong>BRASIL. Ministério da Saúde.</strong> Guia de Atividade Física para a População Brasileira. <a href="https://www.gov.br/saude/pt-br/assuntos/saude-brasil/eu-quero-ter-peso-saudavel/documentos/pdf/guia_atividade_fisica_populacao_brasileira.pdf" target="_blank" rel="noopener">gov.br/saude/…/guia_atividade_fisica_populacao_brasileira.pdf</a></li>
+          <li><strong>BRASIL. Ministério da Saúde.</strong> Guia Alimentar para a População Brasileira. <a href="https://www.gov.br/saude/pt-br/composicao/saps/promocao-da-saude/guias-alimentares/guias-alimentares" target="_blank" rel="noopener">gov.br/saude/…/guias-alimentares</a></li>
+          <li><strong>BRASIL. Ministério da Saúde.</strong> Hipertensão (pressão alta): prevenção. <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hipertensao/prevencao" target="_blank" rel="noopener">gov.br/saude/…/hipertensao/prevencao</a></li>
+          <li><strong>BRASIL. Ministério da Saúde.</strong> Hipertensão (pressão alta): informações gerais. <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hipertensao" target="_blank" rel="noopener">gov.br/saude/…/hipertensao</a></li>
+          <li><strong>BRASIL. Ministério da Saúde.</strong> Diabetes (diabetes mellitus). <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/diabetes/" target="_blank" rel="noopener">gov.br/saude/…/diabetes</a></li>
+          <li><strong>BRASIL. Ministério da Saúde.</strong> Diabetes: tratamento. <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/diabetes/tratamento" target="_blank" rel="noopener">gov.br/saude/…/diabetes/tratamento</a></li>
+          <li><strong>BRASIL. Ministério da Saúde.</strong> Linhas de Cuidado: Adolescente — atividade física e imunização. <a href="https://linhasdecuidado.saude.gov.br/portal/puericultura/unidade-de-atencao-primaria/adolescente/" target="_blank" rel="noopener">linhasdecuidado.saude.gov.br/…/adolescente</a></li>
+          <li><strong>ORGANIZAÇÃO MUNDIAL DA SAÚDE.</strong> Diretrizes sobre atividade física e comportamento sedentário (2020). <a href="https://bigg-rec.bvsalud.org/pt/guidelines/cd5cb0145fe5313061cf9506c88eb03c05feebc3" target="_blank" rel="noopener">bigg-rec.bvsalud.org/…/guidelines</a></li>
+          <li><strong>OPAS/OMS.</strong> Diretrizes para promover alimentação saudável e atividade física nas escolas (2026). <a href="https://www.paho.org/pt/noticias/10-7-2026-opas-e-oea-apresentam-novas-diretrizes-para-promover-alimentacao-saudavel-e" target="_blank" rel="noopener">paho.org/pt/noticias/…</a></li>
+          <li><strong>BRASIL. Ministério da Saúde.</strong> Protocolo Clínico e Diretrizes Terapêuticas do Diabete Melito Tipo 1. <a href="https://www.gov.br/saude/pt-br/assuntos/pcdt/d/diabete-melito-tipo-1/view" target="_blank" rel="noopener">gov.br/saude/…/diabete-melito-tipo-1</a></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ (fora da tela inicial) ===================== -->
+  <footer class="site-footer" id="site-footer" hidden>
+    <p><i class="ph ph-info"></i> Este conteúdo é educativo e não substitui avaliação, diagnóstico ou tratamento por profissionais de saúde.</p>
+    <p class="site-footer__meta">Saúde em Movimento · Guia Jovem · <a href="#referencias" class="discreet-link">Referências bibliográficas</a></p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
